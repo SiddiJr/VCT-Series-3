@@ -2,16 +2,15 @@ import { clienteService } from '../service/manageResultados.js';
 
 window.onload = () => {
 
-    clienteService.recebeResultadoSemifinal();
     clienteService.recebeResultadoWinners();
     clienteService.recebeResultadoElimination();
     clienteService.recebeResultadoDecider();
     clienteService.recebeResultadoQualified();
 
-    $semifinal1.addEventListener('click', modalOpen);
-    $semifinal2.addEventListener('click', modalOpen1);
-    $semifinal3.addEventListener('click', modalOpen2);
-    $semifinal4.addEventListener('click', modalOpen3);
+    $winnersTop.addEventListener('click', modalOpen);
+    $losersTop.addEventListener('click', modalOpen1);
+    $winnersBottom.addEventListener('click', modalOpen2);
+    $losersBottom.addEventListener('click', modalOpen3);
 
     function modalOpen() {
         $modalMatch1.toggleAttribute('hidden');

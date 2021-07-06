@@ -34,21 +34,22 @@
                 <h3 class="bracket-title">Upper</h3>
                 <ul>
                     <div class="matchup" id="semi1">
-                        <li class="bracket noselect" id="A-upper1">Team Vikings<span class="score"
+                        <li class="bracket noselect win" id="A-upper1">Team Vikings<span class="score"
                                 id="A-upperscore1">13</span>
                         </li>
 
-                        <li class="bracket noselect" id="A-upper2">Stars Horizon<span class="score"
+                        <li class="bracket noselect lose" id="A-upper2">Stars Horizon<span class="score"
                                 id="A-upperscore2">9</span>
                         </li>
                     </div>
 
                     <div class="matchup" id="semi2">
-                        <li class="bracket matchup-space noselect" id="A-upper3">FURIA<span class="score"
+                        <li class="bracket matchup-space noselect win" id="A-upper3">FURIA<span class="score"
                                 id="A-upperscore3">13</span>
                         </li>
 
-                        <li class="bracket noselect" id="A-upper4">SLICK<span class="score" id="A-upperscore4">4</span>
+                        <li class="bracket noselect lose" id="A-upper4">SLICK<span class="score"
+                                id="A-upperscore4">4</span>
                         </li>
                     </div>
                 </ul>
@@ -57,8 +58,10 @@
             <h3 class="bracket-title">Bottom</h3>
             <div class="elimination">
                 <ul>
-                    <li class="bracket noselect" id="A-bottom1">Stars Horizon<span class="score">0</span></li>
-                    <li class="bracket noselect" id="A-bottom2">SLICK<span class="score">0</span></li>
+                    <li class="bracket noselect lose" id="A-bottom1">Stars Horizon<span class="score"
+                            id="losersTop1">0</span></li>
+                    <li class="bracket noselect win" id="A-bottom2">SLICK<span class="score" id="losersTop2">0</span>
+                    </li>
                 </ul>
             </div>
 
@@ -67,21 +70,21 @@
                 <h3 class="bracket-title">Upper</h3>
                 <ul>
                     <div class="matchup" id="semi3">
-                        <li class="bracket noselect" id="B-upper1">Sharks<span class="score"
+                        <li class="bracket noselect win" id="B-upper1">Sharks<span class="score"
                                 id="B-upperscore1">13</span>
                         </li>
 
-                        <li class="bracket noselect" id="B-upper2">NOORG2.0<span class="score"
+                        <li class="bracket noselect lose" id="B-upper2">NOORG2.0<span class="score"
                                 id="B-upperscore2">10</span>
                         </li>
                     </div>
 
                     <div class="matchup" id="semi4">
-                        <li class="bracket matchup-space noselect" id="B-upper3">Gamelanders Blue<span class="score"
+                        <li class="bracket matchup-space noselect win" id="B-upper3">Gamelanders Blue<span class="score"
                                 id="B-upperscore3">13</span>
                         </li>
 
-                        <li class="bracket noselect" id="B-upper4">Havan Liberty<span class="score"
+                        <li class="bracket noselect lose" id="B-upper4">Havan Liberty<span class="score"
                                 id="B-upperscore4">6</span>
                         </li>
                     </div>
@@ -91,13 +94,59 @@
             <h3 class="bracket-title">Bottom</h3>
             <div class="elimination">
                 <ul>
-                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
-                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                    <li class="bracket noselect lose">Havan Liberty<span class="score" id="losersBottom1">0</span></li>
+                    <li class="bracket noselect win">NOORG 2.0<span class="score" id="losersBottom2">0</span></li>
                 </ul>
             </div>
         </section>
 
         <section class="secondPhase">
+            <div class="winners-top">
+                <h3 class="bracket-title">Winners</h3>
+                <ul>
+                    <div id="winners-top">
+                        <li class="bracket noselect">Team Vikings<span class="score" id="winnerUpper1">0</span>
+                        </li>
+                        <li class="bracket noselect">FURIA<span class="score" id="winnerUpper2">0</span></li>
+                    </div>
+                </ul>
+
+            </div>
+
+            <div class="losers-top">
+                <h3 class="bracket-title">Losers</h3>
+                <ul>
+                    <div id="losers-top">
+                        <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                        <li class="bracket noselect">SLICK<span class="score">0</span></li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="winners-bottom">
+                <h3 class="bracket-title">Winners</h3>
+                <ul>
+                    <div id="winners-bottom">
+                        <li class="bracket noselect"">Sharks Esports<span class=" score" id="winnerBottom1">0</span>
+                        </li>
+                        <li class="bracket noselect"">Gamelanders Blue<span class=" score" id="winnerBottom2">0</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="losers-bottom">
+                <h3 class="bracket-title">Losers</h3>
+                <ul>
+                    <div id="losers-bottom">
+                        <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                        <li class="bracket noselect">NOORG 2.0<span class="score">0</span></li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <section class="qualified">
             <div id="modal-match1" class="modal mt1" hidden>
                 <div class="in-modal">
                     <span class="teamTitle noselect">TV</span>
@@ -109,7 +158,7 @@
                 </div>
 
                 <div class="in-modal">
-                    <span class="teamTitle noselect">ex-B4</span>
+                    <span class="teamTitle noselect">FUR</span>
                     <button class="arrow" id="arrowUp-team2">&#708</button>
                     <div class="div-score">
                         <span class="score1 noselect" id="score2">0</span>
@@ -118,20 +167,16 @@
                 </div>
             </div>
 
-            <div class="winners-top">
-                <h3 class="bracket-title">Winners</h3>
+            <div class="qualified1">
+                <h3 class="bracket-title">Qualified</h3>
                 <ul>
-                    <li class="bracket noselect" id="winnersName1">Team Vikings<span class="score"
-                            id="winnerUpper1">0</span>
-                    </li>
-                    <li class="bracket noselect">FURIA<span class="score" id="winnerUpper2">0</span></li>
+                    <li class="bracket TBD noselect" id="qualified1">TBD</li>
                 </ul>
-
             </div>
 
             <div id="modal-match2" class="modal mt2" hidden>
                 <div class="in-modal">
-                    <span class="teamTitle noselect">FUR</span>
+                    <span class="teamTitle noselect">TBD</span>
                     <button class="arrow" id="arrowUp-team3">&#708</button>
                     <div class="div-score">
                         <span class="score1 noselect" id="score3">0</span>
@@ -149,11 +194,10 @@
                 </div>
             </div>
 
-            <div class="losers-top">
-                <h3 class="bracket-title">Losers</h3>
+            <div class="qualified2">
+                <h3 class="bracket-title">Qualified</h3>
                 <ul>
-                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
-                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                    <li class="bracket TBD noselect" id="qualified2">TBD</li>
                 </ul>
             </div>
 
@@ -168,7 +212,7 @@
                 </div>
 
                 <div class="in-modal">
-                    <span class="teamTitle noselect">NOORG</span>
+                    <span class="teamTitle noselect">GLB</span>
                     <button class="arrow" id="arrowUp-team6">&#708</button>
                     <div class="div-score">
                         <span class="score1 noselect" id="score6">0</span>
@@ -177,17 +221,16 @@
                 </div>
             </div>
 
-            <div class="winners-bottom">
-                <h3 class="bracket-title">Winners</h3>
+            <div class="qualified3">
+                <h3 class="bracket-title">Qualified</h3>
                 <ul>
-                    <li class="bracket noselect">Sharks Esports<span class="score">0</span></li>
-                    <li class="bracket noselect">Gamelanders Blue<span class="score">0</span></li>
+                    <li class="bracket TBD noselect" id="qualified3">TBD</li>
                 </ul>
             </div>
 
             <div id="modal-match4" class="modal mt4" hidden>
                 <div class="in-modal">
-                    <span class="teamTitle noselect">GLB</span>
+                    <span class="teamTitle noselect">TBD</span>
                     <button class="arrow" id="arrowUp-team7">&#708</button>
                     <div class="div-score">
                         <span class="score1 noselect" id="score7">0</span>
@@ -196,44 +239,13 @@
                 </div>
 
                 <div class="in-modal">
-                    <span class="teamTitle noselect">HL</span>
+                    <span class="teamTitle noselect">NOORG</span>
                     <button class="arrow" id="arrowUp-team8">&#708</button>
                     <div class="div-score">
                         <span class="score1 noselect" id="score8">0</span>
                     </div>
                     <button class="arrow" id="arrowDown-team8">&#709</button>
                 </div>
-            </div>
-
-            <div class="losers-bottom">
-                <h3 class="bracket-title">Losers</h3>
-                <ul>
-                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
-                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="qualified">
-            <div class="qualified1">
-                <h3 class="bracket-title">Qualified</h3>
-                <ul>
-                    <li class="bracket TBD noselect" id="qualified1">TBD</li>
-                </ul>
-            </div>
-
-            <div class="qualified2">
-                <h3 class="bracket-title">Qualified</h3>
-                <ul>
-                    <li class="bracket TBD noselect" id="qualified2">TBD</li>
-                </ul>
-            </div>
-
-            <div class="qualified3">
-                <h3 class="bracket-title">Qualified</h3>
-                <ul>
-                    <li class="bracket TBD noselect" id="qualified3">TBD</li>
-                </ul>
             </div>
 
             <div class="qualified4">

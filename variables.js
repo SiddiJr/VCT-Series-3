@@ -1,9 +1,9 @@
 
 //Variáveis div partida
-const $semifinal1 = document.getElementById('semi1');
-const $semifinal2 = document.getElementById('semi2');
-const $semifinal3 = document.getElementById('semi3');
-const $semifinal4 = document.getElementById('semi4');
+const $winnersTop = document.getElementById('winners-top');
+const $losersTop = document.getElementById('losers-top');
+const $winnersBottom = document.getElementById('winners-bottom');
+const $losersBottom = document.getElementById('losers-bottom');
 
 //Variáveis modal box
 const $modalMatch1 = document.getElementById('modal-match1');
@@ -35,6 +35,12 @@ const $scoreMatch7 = document.getElementById('B-upperscore3')
 const $scoreMatch8 = document.getElementById('B-upperscore4')
 const $scoreWinnersUpper1 = document.getElementById('winnerUpper1')
 const $scoreWinnersUpper2 = document.getElementById('winnerUpper2')
+const $scoreWinnersBottom1 = document.getElementById('winnerBottom1')
+const $scoreWinnersBottom2 = document.getElementById('winnerBottom2')
+const $scoreLosersUpper1 = document.getElementById('losersTop1')
+const $scoreLosersUpper2 = document.getElementById('losersTop2')
+const $scoreLosersBottom1 = document.getElementById('losersBottom1')
+const $scoreLosersBottom2 = document.getElementById('losersBottom2')
 
 //Variáveis Qualificados
 

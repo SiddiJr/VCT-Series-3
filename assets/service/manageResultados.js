@@ -17,27 +17,6 @@ const atualizaResultado = (nomeDoTime, rounds) => {
         })
 }
 
-const recebeResultadoSemifinal = () => {
-    return fetch(`http://localhost:3000/VCT-Challengers1`)
-        .then(resposta => {
-            if (resposta.ok) {
-                return resposta.json()
-                    .then(data => {
-                        $scoreMatch1.innerHTML = data.Semifinal.partida1.time1Rounds
-                        $scoreMatch2.innerHTML = data.Semifinal.partida1.time2Rounds
-                        $scoreMatch3.innerHTML = data.Semifinal.partida2.time1Rounds
-                        $scoreMatch4.innerHTML = data.Semifinal.partida2.time2Rounds
-                        $scoreMatch5.innerHTML = data.Semifinal.partida3.time1Rounds
-                        $scoreMatch6.innerHTML = data.Semifinal.partida3.time2Rounds
-                        $scoreMatch7.innerHTML = data.Semifinal.partida4.time1Rounds
-                        $scoreMatch8.innerHTML = data.Semifinal.partida4.time2Rounds
-                    })
-            }
-            throw new Error('Não foi possível receber os resultados!')
-        })
-        .catch((err) => console.log(err))
-}
-
 const recebeResultadoWinners = () => {
     return fetch(`http://localhost:3000/VCT-Challengers1`)
         .then(resposta => {
@@ -46,6 +25,8 @@ const recebeResultadoWinners = () => {
                     .then(data => {
                         $scoreWinnersUpper1.innerHTML = data.Winners.groupA.time1Mapas
                         $scoreWinnersUpper2.innerHTML = data.Winners.groupA.time2Mapas
+                        $scoreWinnersBottom1.innerHTML = data.Winners.groupB.time1Mapas
+                        $scoreWinnersBottom1.innerHTML = data.Winners.groupB.time2Mapas
                     })
             }
             throw new Error('Não foi possível receber os resultados!')
@@ -59,8 +40,10 @@ const recebeResultadoElimination = () => {
             if (resposta.ok) {
                 return resposta.json()
                     .then(data => {
-
-
+                        $scoreLosersUpper1.innerHTML = data.Elimination.groupA.time1Mapas
+                        $scoreLosersUpper2.innerHTML = data.Elimination.groupA.time2Mapas
+                        $scoreLosersBottom1.innerHTML = data.Elimination.groupB.time1Mapas
+                        $scoreLosersBottom2.innerHTML = data.Elimination.groupB.time2Mapas
                     })
             }
             throw new Error('Não foi possível receber os resultados!')
@@ -106,7 +89,6 @@ const recebeResultadoQualified = () => {
 
 
 export const clienteService = {
-    recebeResultadoSemifinal,
     recebeResultadoWinners,
     recebeResultadoElimination,
     recebeResultadoDecider,
