@@ -1,0 +1,82 @@
+{
+    "VCT-Challengers1": {
+        "Semifinal": {
+            "partida1": 
+                {
+                    "time1": "Team Vikings",
+                    "time2": "Star Horizon",
+                    "time1Rounds": "13",
+                    "time2Rounds": "9"
+                },
+            "partida2": 
+                {
+                    "time1": "FURIA",
+                    "time2": "SLICK",
+                    "time1Rounds": "13",
+                    "time2Rounds": "4"
+                },
+            "partida3":
+                {
+                    "time1": "Sharks",
+                    "time2": "NOORG 2.0",
+                    "time1Rounds": "13",
+                    "time2Rounds": "10"
+                },
+            "partida4": 
+                {
+                    "time1": "Gamelanders Blue",
+                    "time2": "Havan Liberty",
+                    "time1Rounds": "13",
+                    "time2Rounds": "6"
+                }
+        },
+        "Winners": {
+            "groupA": {
+                "time1": "Team Vikings",
+                "time2": "FURIA",
+                "time1Mapas": "0",
+                "time2Mapas": "0"
+            },
+            "groupB": {
+                "time1": "Sharks Esports",
+                "time2": "Gamelanders Blue",
+                "time1Mapas": "0",
+                "time2Mapas": "0"
+            }
+        },
+        "Elimination": {
+            "groupA": {
+                "time1": "Stars Horizon",
+                "time2": "SLICK",
+                "time1Mapas": "0",
+                "time2Mapas": "2"
+            },
+            "groupB": {
+                "time1": "Havan Liberty",
+                "time2": "NOORG 2.0",
+                "time1Mapas": "1",
+                "time2Mapas": "2"
+            }
+        },
+        "Decider": {
+            "groupA": {
+                "time1": "TBD",
+                "time2": "SLICK",
+                "time1Mapas": "0",
+                "time2Mapas": "0"
+            },
+            "groupB": {
+                "time1": "TBD",
+                "time2": "NOORG 2.0",
+                "time1Mapas": "0",
+                "time2Mapas": "0"
+            }
+        },
+        "Qualified": {
+            "time1": "TBD",
+            "time2": "TBD",
+            "time3": "TBD",
+            "time4": "TBD"
+        }
+    }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/tabela.css">
+    <title>Tabela</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span>
+            <img class="navbar-image" src="./assets/img/logo_header.png" alt="Logo image">
+        </span>
+
+        <ul>
+            <li class="navbar-list"><a href="#" class="navbar-link">Home</a></li>
+            <li class="navbar-list"><a href="./cadastroDeTimes.html" class="navbar-link">Cadastro</a></li>
+            <li class="navbar-list"><a href="./tabela.html" class="navbar-link">Tabela</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section class="firstPhase">
+            <h2 class="group-title">Group A</h2>
+            <div class="semifinals">
+                <h3 class="bracket-title">Upper</h3>
+                <ul>
+                    <div class="matchup" id="semi1">
+                        <li class="bracket noselect" id="A-upper1">Team Vikings<span class="score"
+                                id="A-upperscore1">13</span>
+                        </li>
+
+                        <li class="bracket noselect" id="A-upper2">Stars Horizon<span class="score"
+                                id="A-upperscore2">9</span>
+                        </li>
+                    </div>
+
+                    <div class="matchup" id="semi2">
+                        <li class="bracket matchup-space noselect" id="A-upper3">FURIA<span class="score"
+                                id="A-upperscore3">13</span>
+                        </li>
+
+                        <li class="bracket noselect" id="A-upper4">SLICK<span class="score" id="A-upperscore4">4</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <h3 class="bracket-title">Bottom</h3>
+            <div class="elimination">
+                <ul>
+                    <li class="bracket noselect" id="A-bottom1">Stars Horizon<span class="score">0</span></li>
+                    <li class="bracket noselect" id="A-bottom2">SLICK<span class="score">0</span></li>
+                </ul>
+            </div>
+
+            <h2 class="group-title">Group B</h2>
+            <div class="semifinals">
+                <h3 class="bracket-title">Upper</h3>
+                <ul>
+                    <div class="matchup" id="semi3">
+                        <li class="bracket noselect" id="B-upper1">Sharks<span class="score"
+                                id="B-upperscore1">13</span>
+                        </li>
+
+                        <li class="bracket noselect" id="B-upper2">NOORG2.0<span class="score"
+                                id="B-upperscore2">10</span>
+                        </li>
+                    </div>
+
+                    <div class="matchup" id="semi4">
+                        <li class="bracket matchup-space noselect" id="B-upper3">Gamelanders Blue<span class="score"
+                                id="B-upperscore3">13</span>
+                        </li>
+
+                        <li class="bracket noselect" id="B-upper4">Havan Liberty<span class="score"
+                                id="B-upperscore4">6</span>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <h3 class="bracket-title">Bottom</h3>
+            <div class="elimination">
+                <ul>
+                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secondPhase">
+            <div id="modal-match1" class="modal mt1" hidden>
+                <div class="in-modal">
+                    <span class="teamTitle noselect">TV</span>
+                    <button class="arrow" id="arrowUp-team1">&#708</button>
+                    <div class="div-score noselect">
+                        <span class="score1 noselect" id="score1">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team1">&#709</button>
+                </div>
+
+                <div class="in-modal">
+                    <span class="teamTitle noselect">ex-B4</span>
+                    <button class="arrow" id="arrowUp-team2">&#708</button>
+                    <div class="div-score">
+                        <span class="score1 noselect" id="score2">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team2">&#709</button>
+                </div>
+            </div>
+
+            <div class="winners-top">
+                <h3 class="bracket-title">Winners</h3>
+                <ul>
+                    <li class="bracket noselect" id="winnersName1">Team Vikings<span class="score"
+                            id="winnerUpper1">0</span>
+                    </li>
+                    <li class="bracket noselect">FURIA<span class="score" id="winnerUpper2">0</span></li>
+                </ul>
+
+            </div>
+
+            <div id="modal-match2" class="modal mt2" hidden>
+                <div class="in-modal">
+                    <span class="teamTitle noselect">FUR</span>
+                    <button class="arrow" id="arrowUp-team3">&#708</button>
+                    <div class="div-score">
+                        <span class="score1 noselect" id="score3">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team3">&#709</button>
+                </div>
+
+                <div class="in-modal">
+                    <span class="teamTitle noselect">SLK</span>
+                    <button class="arrow" id="arrowUp-team4">&#708</button>
+                    <div class="div-score">
+                        <span class="score1 noselect" id="score4">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team4">&#709</button>
+                </div>
+            </div>
+
+            <div class="losers-top">
+                <h3 class="bracket-title">Losers</h3>
+                <ul>
+                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                </ul>
+            </div>
+
+            <div id="modal-match3" class="modal mt3" hidden>
+                <div class="in-modal">
+                    <span class="teamTitle noselect">SHK</span>
+                    <button class="arrow" id="arrowUp-team5">&#708</button>
+                    <div class="div-score">
+                        <span class="score1 noselect" id="score5">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team5">&#709</button>
+                </div>
+
+                <div class="in-modal">
+                    <span class="teamTitle noselect">NOORG</span>
+                    <button class="arrow" id="arrowUp-team6">&#708</button>
+                    <div class="div-score">
+                        <span class="score1 noselect" id="score6">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team6">&#709</button>
+                </div>
+            </div>
+
+            <div class="winners-bottom">
+                <h3 class="bracket-title">Winners</h3>
+                <ul>
+                    <li class="bracket noselect">Sharks Esports<span class="score">0</span></li>
+                    <li class="bracket noselect">Gamelanders Blue<span class="score">0</span></li>
+                </ul>
+            </div>
+
+            <div id="modal-match4" class="modal mt4" hidden>
+                <div class="in-modal">
+                    <span class="teamTitle noselect">GLB</span>
+                    <button class="arrow" id="arrowUp-team7">&#708</button>
+                    <div class="div-score">
+                        <span class="score1 noselect" id="score7">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team7">&#709</button>
+                </div>
+
+                <div class="in-modal">
+                    <span class="teamTitle noselect">HL</span>
+                    <button class="arrow" id="arrowUp-team8">&#708</button>
+                    <div class="div-score">
+                        <span class="score1 noselect" id="score8">0</span>
+                    </div>
+                    <button class="arrow" id="arrowDown-team8">&#709</button>
+                </div>
+            </div>
+
+            <div class="losers-bottom">
+                <h3 class="bracket-title">Losers</h3>
+                <ul>
+                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                    <li class="bracket TBD noselect">TBD<span class="score">0</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="qualified">
+            <div class="qualified1">
+                <h3 class="bracket-title">Qualified</h3>
+                <ul>
+                    <li class="bracket TBD noselect" id="qualified1">TBD</li>
+                </ul>
+            </div>
+
+            <div class="qualified2">
+                <h3 class="bracket-title">Qualified</h3>
+                <ul>
+                    <li class="bracket TBD noselect" id="qualified2">TBD</li>
+                </ul>
+            </div>
+
+            <div class="qualified3">
+                <h3 class="bracket-title">Qualified</h3>
+                <ul>
+                    <li class="bracket TBD noselect" id="qualified3">TBD</li>
+                </ul>
+            </div>
+
+            <div class="qualified4">
+                <h3 class="bracket-title">Qualified</h3>
+                <ul>
+                    <li class="bracket TBD noselect" id="qualified4">TBD</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+<script src="./variables.js"></script>
+<script type="module" src="./assets/controller/recebeResultado-controller.js"></script>
+
+</html>

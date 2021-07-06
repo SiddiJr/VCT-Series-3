@@ -1,0 +1,64 @@
+.modal {
+    width: 163.19px;
+    height: 57px;
+    border: 2px solid black;
+    position: fixed;
+    background-color: #474747;
+    color: white;
+    /* opacity: 0.85; */
+}
+
+.mt1 {
+    margin-top: 7px;
+}
+
+.mt2 {
+    margin-top: 86px;
+}
+
+.mt3 {
+    margin-top: 283px;
+}
+
+.mt4 {
+    margin-top: 362px;
+}
+
+.in-modal {
+    border: 1px solid black;
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.arrow {
+    height: 10px;
+    font-size: 10px;
+    padding: 0 10px 10px 10px;
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+    margin: 0 1px 0 1px;
+}
+
+.teamTitle {
+    font-size: 13px;
+    text-align: center;
+}
+
+.div-score {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.score1 {
+    font-size: 12px;
+}

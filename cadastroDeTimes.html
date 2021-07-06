@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/cadastroDeTimes.css">
+    <title>Cadastro de times</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span>
+            <img class="navbar-image" src="./assets/img/logo_header.png" alt="Logo image">
+        </span>
+
+        <ul>
+            <li class="navbar-list"><a href="#" class="navbar-link">Home</a></li>
+            <li class="navbar-list"><a href="./cadastroDeTimes.html" class="navbar-link">Cadastro</a></li>
+            <li class="navbar-list"><a href="./tabela.html" class="navbar-link">Tabela</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="title">VCT: Series 3 - Challengers 1</h1>
+
+    <div class="input">
+        <input class="input-box" type="text" id="nomeTime" placeholder="Nome do Time" required></input>
+        <!-- <input class=" input-box" type="number" id="vitorias" placeholder="Vitórias" required></input> -->
+        <!-- <input class="input-box" type="number" id="derrotas" placeholder=" Derrotas" required></input> -->
+    </div>
+
+    <p id="error" class="message"></p>
+
+    <div class="input">
+        <button class="btn-adicionar" id="submit">Adicionar</button>
+    </div>
+</body>
+<script src="./cadastroTime.js"></script>
+
+</html>

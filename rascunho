@@ -1,0 +1,181 @@
+'use strict';
+
+$semifinal1.addEventListener('click', modalOpen);
+$semifinal2.addEventListener('click', modalOpen1);
+$semifinal3.addEventListener('click', modalOpen2);
+$semifinal4.addEventListener('click', modalOpen3);
+
+$arrowUpTeam1.addEventListener('click', scoreIncrease1);
+$arrowDownTeam1.addEventListener('click', scoreDecrease1);
+
+$arrowUpTeam2.addEventListener('click', scoreIncrease2);
+$arrowDownTeam2.addEventListener('click', scoreDecrease2);
+
+$arrowUpTeam3.addEventListener('click', scoreIncrease3);
+$arrowDownTeam3.addEventListener('click', scoreDecrease3);
+
+$arrowUpTeam4.addEventListener('click', scoreIncrease4);
+$arrowDownTeam4.addEventListener('click', scoreDecrease4);
+
+$arrowUpTeam5.addEventListener('click', scoreIncrease5);
+$arrowDownTeam5.addEventListener('click', scoreDecrease5);
+
+$arrowUpTeam6.addEventListener('click', scoreIncrease6);
+$arrowDownTeam6.addEventListener('click', scoreDecrease6);
+
+$arrowUpTeam7.addEventListener('click', scoreIncrease7);
+$arrowDownTeam7.addEventListener('click', scoreDecrease7);
+
+$arrowUpTeam8.addEventListener('click', scoreIncrease8);
+$arrowDownTeam8.addEventListener('click', scoreDecrease8);
+
+function modalOpen() {
+    $modalMatch1.toggleAttribute('hidden');
+};
+
+function modalOpen1() {
+    $modalMatch2.toggleAttribute('hidden');
+};
+
+function modalOpen2() {
+    $modalMatch3.toggleAttribute('hidden');
+};
+
+function modalOpen3() {
+    $modalMatch4.toggleAttribute('hidden');
+};
+
+function scoreIncrease1() {
+    if (scoreValue < 2) {
+        scoreValue += 1;
+        $score1.innerHTML = scoreValue;
+        $scoreMatch1.innerHTML = scoreValue;
+    }
+};
+
+function scoreDecrease1() {
+    if (scoreValue > 0) {
+        scoreValue -= 1;
+        $score1.innerHTML = scoreValue;
+        $scoreMatch1.innerHTML = scoreValue
+    }
+}
+
+function scoreIncrease2() {
+    if (scoreValue2 < 2) {
+        scoreValue2 += 1;
+        $score2.innerHTML = scoreValue2;
+        $scoreMatch2.innerHTML = scoreValue2;
+    }
+
+}
+
+function scoreDecrease2() {
+    if (scoreValue2 > 0) {
+        scoreValue2 -= 1;
+        $score2.innerHTML = scoreValue2;
+        $scoreMatch2.innerHTML = scoreValue2;
+    }
+}
+
+function scoreIncrease3() {
+    if (scoreValue3 < 2) {
+        scoreValue3 += 1;
+        $score3.innerHTML = scoreValue3;
+        $scoreMatch3.innerHTML = scoreValue3;
+    }
+
+}
+
+function scoreDecrease3() {
+    if (scoreValue3 > 0) {
+        scoreValue3 -= 1;
+        $score3.innerHTML = scoreValue3;
+        $scoreMatch3.innerHTML = scoreValue3;
+    }
+}
+
+function scoreIncrease4() {
+    if (scoreValue4 < 2) {
+        scoreValue4 += 1;
+        $score4.innerHTML = scoreValue4;
+        $scoreMatch4.innerHTML = scoreValue4;
+    }
+
+}
+
+function scoreDecrease4() {
+    if (scoreValue4 > 0) {
+        scoreValue4 -= 1;
+        $score4.innerHTML = scoreValue4;
+        $scoreMatch4.innerHTML = scoreValue4;
+    }
+}
+
+function scoreIncrease5() {
+    if (scoreValue5 < 2) {
+        scoreValue5 += 1;
+        $score5.innerHTML = scoreValue5;
+        $scoreMatch5.innerHTML = scoreValue5;
+    }
+
+}
+
+function scoreDecrease5() {
+    if (scoreValue5 > 0) {
+        scoreValue5 -= 1;
+        $score5.innerHTML = scoreValue5;
+        $scoreMatch5.innerHTML = scoreValue5;
+    }
+}
+
+function scoreIncrease6() {
+    if (scoreValue6 < 2) {
+        scoreValue6 += 1;
+        $score6.innerHTML = scoreValue6;
+        $scoreMatch6.innerHTML = scoreValue6;
+    }
+
+}
+
+function scoreDecrease6() {
+    if (scoreValue6 > 0) {
+        scoreValue6 -= 1;
+        $score6.innerHTML = scoreValue6;
+        $scoreMatch6.innerHTML = scoreValue6;
+    }
+}
+
+function scoreIncrease7() {
+    if (scoreValue7 < 2) {
+        scoreValue7 += 1;
+        $score7.innerHTML = scoreValue7;
+        $scoreMatch7.innerHTML = scoreValue7;
+    }
+
+}
+
+function scoreDecrease7() {
+    if (scoreValue7 > 0) {
+        scoreValue7 -= 1;
+        $score7.innerHTML = scoreValue7;
+        $scoreMatch7.innerHTML = scoreValue7;
+    }
+}
+
+function scoreIncrease8() {
+    if (scoreValue8 < 2) {
+        scoreValue8 += 1;
+        $score8.innerHTML = scoreValue8;
+        $scoreMatch8.innerHTML = scoreValue8;
+    }
+
+}
+
+function scoreDecrease8() {
+    if (scoreValue8 > 0) {
+        scoreValue8 -= 1;
+        $score8.innerHTML = scoreValue8;
+        $scoreMatch8.innerHTML = scoreValue8;
+    }
+}

@@ -1,0 +1,50 @@
+@import "./navbar.css";
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* background: url(../img/valorant-img.jpg) no-repeat; */
+    /* background-size: cover; */
+    background-color: rgb(71, 71, 71);
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 300;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.input-box {
+    border-radius: var(--border-radius);
+    width: 200px;
+    height: 61px;
+    text-align: center;
+    background-color: var(--button-color);
+    border: var(--border);
+    margin-right: 25px;
+}
+
+.message {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    margin: 0;
+    color: white;
+}
+
+.btn-adicionar {
+    border-radius: var(--border-radius);
+    width: 800px;
+    height: 158px;
+    background-color: var(--button-color);
+    border: var(--border);
+    cursor: pointer;
+    margin-top: 180px;
+}
